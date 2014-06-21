@@ -30,7 +30,6 @@ cacheSolve <- function(x, ...) {
     ## Check to see whether matrix is invertible
     if (det(data) == 0) {
         message("matrix is noninvertible")
-        return
     } else {
         i <- solve(data, ...)
         x$setinverse(i)
